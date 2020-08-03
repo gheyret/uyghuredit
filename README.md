@@ -8,6 +8,7 @@ A free Text Editor with spell check ability for Uyghur.
 (Uyghuredit Windows muhitidila ishleydu)
 
 uyghuredit.7z ni ornatmayla, herqandaq yerge yéyip ishletkili bolidu. 
+
 bilmigenler uyghuredit.msi ni chüshürüp sistémingizgha ornitip ishliting.
 
 # Kona bilimler: 
