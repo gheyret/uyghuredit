@@ -1,2 +1,2 @@
 # UyghurEdit
-A free Text Editor with spell check ability for Uyghur
+A free Text Editor with spell check ability for Uyghur.
