@@ -8,6 +8,8 @@ A free Text Editor with spell check ability for Uyghur.
 (Uyghuredit Windows muhitidila ishleydu)
 
 uyghuredit.zip ni ornatmayla, herqandaq yerge yéyip ishletkili bolidu. bilmigenler uyghuredit.msi ni chüshürüp sistémingizgha ornitip ishliting.
-Kona bilimler: 
+
+# Kona bilimler: 
 Uyghur’édit ning özining kirgüzüsh iqtidari bar bolup, kirgüzgüchlerni almashturush üchün Ctl+K ni qayta-qayta bésish arqiliq kirgüzgüchlerni almashturghili bolidu. Ctl+K ni basqanda, halet baldiqi(eng astidiki baldaq)ning eng ong teripide qaysi xil yéziqning kirgüzgüchi ikenlikini bilgili bolidu.
 kirgüzgüch «mewhum», «uyghurche» bolghanda, Alt kunupkisini bésip turup (o, u, e)larni bésish arqiliq (ö, ü, é) larni kirgüzgili bolidu.
+
