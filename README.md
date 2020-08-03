@@ -7,7 +7,8 @@ A free Text Editor with spell check ability for Uyghur.
 4. Uyghureditqila xas bolghan «Uyghur Mewhum Yéziqi» ni qoshtum. bu Uyghur Ereb yéziqi(UEY)da yazma yézishqa qulaysiz muhitta(xizmet orni dégendek) yézishqa qulayliq keltürüsh bilen birge, yazmilarni Uyghur Latin yéziqi(ULY)da yézip UEY ke aylandurup ishlitidighanlar duch kélidighan in’glizche mezmunlarningmu UEY aylinip kétishidin saqlanghili bolidu. (diqqet, «Uyghur Mewhum Yéziqi» yéngiche yéziqmu emes, hem uni Uyghuredittila ishletkili bolidu. bashqa yerde ishletsingiz héch némini körelmeysiz.)
 (Uyghuredit Windows muhitidila ishleydu)
 
-uyghuredit.zip ni ornatmayla, herqandaq yerge yéyip ishletkili bolidu. bilmigenler uyghuredit.msi ni chüshürüp sistémingizgha ornitip ishliting.
+uyghuredit.7z ni ornatmayla, herqandaq yerge yéyip ishletkili bolidu. 
+bilmigenler uyghuredit.msi ni chüshürüp sistémingizgha ornitip ishliting.
 
 # Kona bilimler: 
 Uyghur’édit ning özining kirgüzüsh iqtidari bar bolup, kirgüzgüchlerni almashturush üchün Ctl+K ni qayta-qayta bésish arqiliq kirgüzgüchlerni almashturghili bolidu. Ctl+K ni basqanda, halet baldiqi(eng astidiki baldaq)ning eng ong teripide qaysi xil yéziqning kirgüzgüchi ikenlikini bilgili bolidu.
