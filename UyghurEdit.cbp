@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="UyghurEdit" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="./Debug/UyghurEdit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug/" />
+				<Option deps_output="./Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Winline" />
+					<Add option="-Wall" />
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DUNICODE" />
+				</Compiler>
+				<ExtraCommands>
+					<Add after="$(CMD_CP) F:\gheyret\kenjisoft\UyghurEdit\uyghuredit.dic $(TARGET_OUTPUT_DIR)." />
+				</ExtraCommands>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="./Release/UyghurEdit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="./Release/" />
+				<Option deps_output="./Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wall" />
+					<Add option="-std=gnu++14" />
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-DUNICODE" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-m32" />
+		</Compiler>
+		<Linker>
+			<Add option="-m32" />
+			<Add library="imm32" />
+			<Add library="comctl32" />
+			<Add library="shlwapi" />
+		</Linker>
+		<Unit filename="CDialog.cpp" />
+		<Unit filename="CDialog.h" />
+		<Unit filename="CDoUndoManage.h" />
+		<Unit filename="RegistryOperation.cpp" />
+		<Unit filename="RegistryOperation.h" />
+		<Unit filename="SetFont.cpp" />
+		<Unit filename="SetFont.h" />
+		<Unit filename="UBidiLine.cpp" />
+		<Unit filename="UBidiLine.h" />
+		<Unit filename="UCaptionButton.cpp" />
+		<Unit filename="UCaptionButton.h" />
+		<Unit filename="UCommon.h" />
+		<Unit filename="UCorrector.h" />
+		<Unit filename="UDialog.h" />
+		<Unit filename="UEditWin.cpp" />
+		<Unit filename="UEditWin.h" />
+		<Unit filename="UFileDialog.cpp" />
+		<Unit filename="UFileDialog.h" />
+		<Unit filename="UGlobal.cpp" />
+		<Unit filename="UMessageBox.cpp" />
+		<Unit filename="UMessageBox.h" />
+		<Unit filename="UPrinter.h" />
+		<Unit filename="UYGString.h" />
+		<Unit filename="UyghurEdit.cpp" />
+		<Unit filename="UyghurEdit.h" />
+		<Unit filename="UyghurEdit.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="UyghurEditMain.cpp" />
+		<Unit filename="UyghurEditMain.h" />
+		<Unit filename="UyghurKeyboard.h" />
+		<Unit filename="UyghurcheKodAlmashturush.h" />
+		<Unit filename="Uyghurcode.h" />
+		<Unit filename="ortaq.h" />
+		<Unit filename="resource.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

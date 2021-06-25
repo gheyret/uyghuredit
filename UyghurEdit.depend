@@ -1,0 +1,616 @@
+# depslib dependency file v1.0
+1260423736 source:d:\gheyret\unicode\uyghureditapi\cdialog.cpp
+	"CDialog.h"
+	"resource.h"
+
+1269829198 d:\gheyret\unicode\uyghureditapi\cdialog.h
+	<windows.h>
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1269829528 d:\gheyret\unicode\uyghureditapi\ucaptionbutton.h
+	"UCommon.h"
+	"ortaq.h"
+
+1275649040 d:\gheyret\unicode\uyghureditapi\ucommon.h
+	<windows.h>
+	"ortaq.h"
+
+1269830756 d:\gheyret\unicode\uyghureditapi\ortaq.h
+
+1272254932 d:\gheyret\unicode\uyghureditapi\resource.h
+
+1150709968 source:d:\gheyret\unicode\uyghureditapi\registryoperation.cpp
+	"RegistryOperation.h"
+
+1269829528 d:\gheyret\unicode\uyghureditapi\registryoperation.h
+	<windows.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269830350 source:d:\gheyret\unicode\uyghureditapi\setfont.cpp
+	"SetFont.h"
+	"ortaq.h"
+
+1269829528 d:\gheyret\unicode\uyghureditapi\setfont.h
+	<windows.h>
+	<io.h>
+	"resource.h"
+	"UCommon.h"
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1260423736 source:d:\gheyret\unicode\uyghureditapi\ubidiline.cpp
+	"UBidiLine.h"
+
+1269829330 d:\gheyret\unicode\uyghureditapi\ubidiline.h
+	<windows.h>
+	"ortaq.h"
+
+1269838564 source:d:\gheyret\unicode\uyghureditapi\ucaptionbutton.cpp
+	<windows.h>
+	"resource.h"
+	"UCaptionButton.h"
+
+1275651234 source:d:\gheyret\unicode\uyghureditapi\ueditwin.cpp
+	<io.h>
+	"UEditWin.h"
+	"UPrinter.h"
+	"resource.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	"UyghurKeyboard.h"
+	"SetFont.h"
+
+1270452750 d:\gheyret\unicode\uyghureditapi\ueditwin.h
+	<windows.h>
+	"CDoUndoManage.h"
+	"UYGString.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UBidiLine.h"
+	"ortaq.h"
+
+1269829528 d:\gheyret\unicode\uyghureditapi\cdoundomanage.h
+	<iostream>
+	<stack>
+	"ortaq.h"
+
+1272260538 d:\gheyret\unicode\uyghureditapi\uygstring.h
+	<wtypes.h>
+	<wchar.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269829294 d:\gheyret\unicode\uyghureditapi\umessagebox.h
+	<windows.h>
+	"resource.h"
+	"UCommon.h"
+	"ortaq.h"
+
+1269829530 d:\gheyret\unicode\uyghureditapi\uprinter.h
+	"UYGString.h"
+	"UBidiLine.h"
+	"UCommon.h"
+	<io.h>
+	"ortaq.h"
+
+1272260612 d:\gheyret\unicode\uyghureditapi\uyghurchekodalmashturush.h
+	"ortaq.h"
+
+1275649464 d:\gheyret\unicode\uyghureditapi\uyghurkeyboard.h
+	"UCommon.h"
+	"ortaq.h"
+
+1260423736 source:d:\gheyret\unicode\uyghureditapi\ufiledialog.cpp
+	"resource.h"
+	"UFileDialog.h"
+	"UCommon.h"
+
+1269829528 d:\gheyret\unicode\uyghureditapi\ufiledialog.h
+	"CDialog.h"
+	<windows.h>
+	"ortaq.h"
+
+1276559857 source:d:\gheyret\unicode\uyghureditapi\uglobal.cpp
+	"ortaq.h"
+	<windows.h>
+	"UCommon.h"
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+
+1260423734 source:d:\gheyret\unicode\uyghureditapi\umessagebox.cpp
+	"UMessageBox.h"
+
+1251345000 source:d:\gheyret\unicode\uyghureditapi\uyghuredit.cpp
+	<windows.h>
+	"UyghurEditMain.h"
+
+1275651526 d:\gheyret\unicode\uyghureditapi\uyghureditmain.h
+	<windows.h>
+	<commctrl.h>
+	<shlwapi.h>
+	<io.h>
+	"UEditWin.h"
+	"CDialog.h"
+	"UCaptionButton.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UFileDialog.h"
+	"resource.h"
+	"ortaq.h"
+
+1275651506 source:d:\gheyret\unicode\uyghureditapi\uyghuredit.rc
+	"resource.h"
+	"windows.h"
+
+1273360272 source:d:\gheyret\unicode\uyghureditapi\uyghureditmain.cpp
+	"UyghurEditMain.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+
+1260423736 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\cdialog.cpp
+	"CDialog.h"
+	"resource.h"
+
+1269829198 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\cdialog.h
+	<windows.h>
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1269829528 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ucaptionbutton.h
+	"UCommon.h"
+	"ortaq.h"
+
+1275649040 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ucommon.h
+	<windows.h>
+	"ortaq.h"
+
+1278482338 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ortaq.h
+	<limits.h>
+
+1278482920 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\resource.h
+
+1150709968 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\registryoperation.cpp
+	"RegistryOperation.h"
+
+1269829528 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\registryoperation.h
+	<windows.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269830350 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\setfont.cpp
+	"SetFont.h"
+	"ortaq.h"
+
+1269829528 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\setfont.h
+	<windows.h>
+	<io.h>
+	"resource.h"
+	"UCommon.h"
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1260423736 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ubidiline.cpp
+	"UBidiLine.h"
+
+1269829330 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ubidiline.h
+	<windows.h>
+	"ortaq.h"
+
+1269838564 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ucaptionbutton.cpp
+	<windows.h>
+	"resource.h"
+	"UCaptionButton.h"
+
+1278484416 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ueditwin.cpp
+	<io.h>
+	<stdio.h>
+	"UEditWin.h"
+	"UPrinter.h"
+	"resource.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	"UyghurKeyboard.h"
+	"SetFont.h"
+
+1278483186 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ueditwin.h
+	<windows.h>
+	"CDoUndoManage.h"
+	"UYGString.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UBidiLine.h"
+	"ortaq.h"
+
+1269829528 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\cdoundomanage.h
+	<iostream>
+	<stack>
+	"ortaq.h"
+
+1272260538 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uygstring.h
+	<wtypes.h>
+	<wchar.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269829294 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\umessagebox.h
+	<windows.h>
+	"resource.h"
+	"UCommon.h"
+	"ortaq.h"
+
+1269829530 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uprinter.h
+	"UYGString.h"
+	"UBidiLine.h"
+	"UCommon.h"
+	<io.h>
+	"ortaq.h"
+
+1278486492 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghurchekodalmashturush.h
+	"ortaq.h"
+
+1275649464 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghurkeyboard.h
+	"UCommon.h"
+	"ortaq.h"
+
+1260423736 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ufiledialog.cpp
+	"resource.h"
+	"UFileDialog.h"
+	"UCommon.h"
+
+1269829528 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\ufiledialog.h
+	"CDialog.h"
+	<windows.h>
+	"ortaq.h"
+
+1281568762 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uglobal.cpp
+	"ortaq.h"
+	<windows.h>
+	"UCommon.h"
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+
+1260423734 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\umessagebox.cpp
+	"UMessageBox.h"
+
+1251345000 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghuredit.cpp
+	<windows.h>
+	"UyghurEditMain.h"
+
+1281568970 e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghureditmain.h
+	<windows.h>
+	<commctrl.h>
+	<shlwapi.h>
+	<io.h>
+	"UEditWin.h"
+	"CDialog.h"
+	"UCaptionButton.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UFileDialog.h"
+	"resource.h"
+	"ortaq.h"
+
+1278482812 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghuredit.rc
+	"resource.h"
+	"windows.h"
+
+1278484236 source:e:\projectes\unicode\uyghureditapisrc\uyghureditapi\uyghureditmain.cpp
+	"UyghurEditMain.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	<stdio.h>
+
+1604304959 source:f:\gheyret\unicode\uyghureditapi\cdialog.cpp
+	"CDialog.h"
+	"resource.h"
+
+1269829198 f:\gheyret\unicode\uyghureditapi\cdialog.h
+	<windows.h>
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1380176557 f:\gheyret\unicode\uyghureditapi\ucaptionbutton.h
+	"UCommon.h"
+	"ortaq.h"
+
+1506498160 f:\gheyret\unicode\uyghureditapi\ucommon.h
+	<windows.h>
+	"ortaq.h"
+
+1604376073 f:\gheyret\unicode\uyghureditapi\ortaq.h
+	<limits.h>
+
+1532483291 f:\gheyret\unicode\uyghureditapi\resource.h
+
+1604381530 source:f:\gheyret\unicode\uyghureditapi\registryoperation.cpp
+	"RegistryOperation.h"
+
+1269829528 f:\gheyret\unicode\uyghureditapi\registryoperation.h
+	<windows.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1604302130 source:f:\gheyret\unicode\uyghureditapi\setfont.cpp
+	"SetFont.h"
+	"ortaq.h"
+
+1269829528 f:\gheyret\unicode\uyghureditapi\setfont.h
+	<windows.h>
+	<io.h>
+	"resource.h"
+	"UCommon.h"
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1260423736 source:f:\gheyret\unicode\uyghureditapi\ubidiline.cpp
+	"UBidiLine.h"
+
+1269829330 f:\gheyret\unicode\uyghureditapi\ubidiline.h
+	<windows.h>
+	"ortaq.h"
+
+1604302264 source:f:\gheyret\unicode\uyghureditapi\ucaptionbutton.cpp
+	<windows.h>
+	"resource.h"
+	"UCaptionButton.h"
+
+1606189645 source:f:\gheyret\unicode\uyghureditapi\ueditwin.cpp
+	<io.h>
+	<stdio.h>
+	<stdint.h>
+	"UEditWin.h"
+	"UPrinter.h"
+	"resource.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	"UyghurKeyboard.h"
+	"SetFont.h"
+
+1532482864 f:\gheyret\unicode\uyghureditapi\ueditwin.h
+	<windows.h>
+	<winnls.h>
+	"CDoUndoManage.h"
+	"UYGString.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UBidiLine.h"
+	"ortaq.h"
+
+1269829528 f:\gheyret\unicode\uyghureditapi\cdoundomanage.h
+	<iostream>
+	<stack>
+	"ortaq.h"
+
+1513210945 f:\gheyret\unicode\uyghureditapi\uygstring.h
+	<wtypes.h>
+	<wchar.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269829294 f:\gheyret\unicode\uyghureditapi\umessagebox.h
+	<windows.h>
+	"resource.h"
+	"UCommon.h"
+	"ortaq.h"
+
+1269829530 f:\gheyret\unicode\uyghureditapi\uprinter.h
+	"UYGString.h"
+	"UBidiLine.h"
+	"UCommon.h"
+	<io.h>
+	"ortaq.h"
+
+1548392866 f:\gheyret\unicode\uyghureditapi\uyghurchekodalmashturush.h
+	"ortaq.h"
+
+1275649464 f:\gheyret\unicode\uyghureditapi\uyghurkeyboard.h
+	"UCommon.h"
+	"ortaq.h"
+
+1604375937 source:f:\gheyret\unicode\uyghureditapi\ufiledialog.cpp
+	"resource.h"
+	"UFileDialog.h"
+	"UCommon.h"
+
+1290399583 f:\gheyret\unicode\uyghureditapi\ufiledialog.h
+	"CDialog.h"
+	<windows.h>
+	"ortaq.h"
+
+1522819070 source:f:\gheyret\unicode\uyghureditapi\uglobal.cpp
+	<windows.h>
+	"UCommon.h"
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+
+1260423734 source:f:\gheyret\unicode\uyghureditapi\umessagebox.cpp
+	"UMessageBox.h"
+
+1506660710 source:f:\gheyret\unicode\uyghureditapi\uyghuredit.cpp
+	<windows.h>
+	"UyghurEditMain.h"
+
+1513055652 f:\gheyret\unicode\uyghureditapi\uyghureditmain.h
+	<windows.h>
+	<commctrl.h>
+	<shlwapi.h>
+	<io.h>
+	"UEditWin.h"
+	"CDialog.h"
+	"UCaptionButton.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UFileDialog.h"
+	"resource.h"
+	"ortaq.h"
+
+1532483719 source:f:\gheyret\unicode\uyghureditapi\uyghuredit.rc
+	"resource.h"
+	"windows.h"
+
+1606190549 source:f:\gheyret\unicode\uyghureditapi\uyghureditmain.cpp
+	"UyghurEditMain.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	<stdio.h>
+
+1604304959 source:s:\projects\uyghureditapi\cdialog.cpp
+	"CDialog.h"
+	"resource.h"
+
+1269829198 s:\projects\uyghureditapi\cdialog.h
+	<windows.h>
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1380176557 s:\projects\uyghureditapi\ucaptionbutton.h
+	"UCommon.h"
+	"ortaq.h"
+
+1506498160 s:\projects\uyghureditapi\ucommon.h
+	<windows.h>
+	"ortaq.h"
+
+1606192015 s:\projects\uyghureditapi\ortaq.h
+	<limits.h>
+
+1532483291 s:\projects\uyghureditapi\resource.h
+
+1604381530 source:s:\projects\uyghureditapi\registryoperation.cpp
+	"RegistryOperation.h"
+
+1269829528 s:\projects\uyghureditapi\registryoperation.h
+	<windows.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1604302130 source:s:\projects\uyghureditapi\setfont.cpp
+	"SetFont.h"
+	"ortaq.h"
+
+1269829528 s:\projects\uyghureditapi\setfont.h
+	<windows.h>
+	<io.h>
+	"resource.h"
+	"UCommon.h"
+	"UCaptionButton.h"
+	"ortaq.h"
+
+1260423736 source:s:\projects\uyghureditapi\ubidiline.cpp
+	"UBidiLine.h"
+
+1269829330 s:\projects\uyghureditapi\ubidiline.h
+	<windows.h>
+	"ortaq.h"
+
+1604302264 source:s:\projects\uyghureditapi\ucaptionbutton.cpp
+	<windows.h>
+	"resource.h"
+	"UCaptionButton.h"
+
+1606192181 source:s:\projects\uyghureditapi\ueditwin.cpp
+	<io.h>
+	<stdio.h>
+	<stdint.h>
+	"UEditWin.h"
+	"UPrinter.h"
+	"resource.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	"UyghurKeyboard.h"
+	"SetFont.h"
+
+1532482864 s:\projects\uyghureditapi\ueditwin.h
+	<windows.h>
+	<winnls.h>
+	"CDoUndoManage.h"
+	"UYGString.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UBidiLine.h"
+	"ortaq.h"
+
+1269829528 s:\projects\uyghureditapi\cdoundomanage.h
+	<iostream>
+	<stack>
+	"ortaq.h"
+
+1606191618 s:\projects\uyghureditapi\uygstring.h
+	<wtypes.h>
+	<wchar.h>
+	"UCommon.h"
+	"ortaq.h"
+
+1269829294 s:\projects\uyghureditapi\umessagebox.h
+	<windows.h>
+	"resource.h"
+	"UCommon.h"
+	"ortaq.h"
+
+1606192044 s:\projects\uyghureditapi\uprinter.h
+	"UYGString.h"
+	"UBidiLine.h"
+	"UCommon.h"
+	<io.h>
+	"ortaq.h"
+
+1606191944 s:\projects\uyghureditapi\uyghurchekodalmashturush.h
+	"ortaq.h"
+
+1275649464 s:\projects\uyghureditapi\uyghurkeyboard.h
+	"UCommon.h"
+	"ortaq.h"
+
+1604375937 source:s:\projects\uyghureditapi\ufiledialog.cpp
+	"resource.h"
+	"UFileDialog.h"
+	"UCommon.h"
+
+1290399583 s:\projects\uyghureditapi\ufiledialog.h
+	"CDialog.h"
+	<windows.h>
+	"ortaq.h"
+
+1606191247 source:s:\projects\uyghureditapi\uglobal.cpp
+	<windows.h>
+	"UCommon.h"
+	<stdio.h>
+	<stdlib.h>
+	<io.h>
+
+1260423734 source:s:\projects\uyghureditapi\umessagebox.cpp
+	"UMessageBox.h"
+
+1506660710 source:s:\projects\uyghureditapi\uyghuredit.cpp
+	<windows.h>
+	"UyghurEditMain.h"
+
+1513055652 s:\projects\uyghureditapi\uyghureditmain.h
+	<windows.h>
+	<commctrl.h>
+	<shlwapi.h>
+	<io.h>
+	"UEditWin.h"
+	"CDialog.h"
+	"UCaptionButton.h"
+	"UMessageBox.h"
+	"UCommon.h"
+	"UFileDialog.h"
+	"resource.h"
+	"ortaq.h"
+
+1532483719 source:s:\projects\uyghureditapi\uyghuredit.rc
+	"resource.h"
+	"windows.h"
+
+1606191563 source:s:\projects\uyghureditapi\uyghureditmain.cpp
+	"UyghurEditMain.h"
+	"RegistryOperation.h"
+	"UyghurcheKodAlmashturush.h"
+	<stdio.h>
+

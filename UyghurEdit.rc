@@ -1,0 +1,412 @@
+#include "resource.h"
+#include "windows.h"
+
+#define SEPARATOR ""
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDM_UYGHUREDIT MENUEX DISCARDABLE
+BEGIN
+    POPUP "Hojjet"
+    BEGIN
+        MENUITEM "Yengi Hojjet(New)",           HOJJET_YENGI
+        MENUITEM "Echish(Open)",                HOJJET_ECHISH
+        MENUITEM "Saqlash(Save)",               HOJJET_SAQLASH
+        MENUITEM "Bashqa Namda Saqlash(Save As...)", HOJJET_BSAQLASH
+        MENUITEM "HTML Sheklide Saqlash",       HOJJET_HTML
+        MENUITEM "Besish(Print)",               HOJJET_BESISH
+        MENUITEM SEPARATOR
+        POPUP "Hojjet Kodi"
+        BEGIN
+            MENUITEM "Bogha,Fangzheng Hojjiti",  HOJJET_BOQUSH_BOGHDA
+            MENUITEM "Weifang DOS Hojjiti",  HOJJET_BOQUSH_WEIFANGDOS
+            MENUITEM "Weifang Window Hojjiti",  HOJJET_BOQUSH_WEIFANGWIN
+            MENUITEM SEPARATOR
+            MENUITEM "Unicode(UTF-16LE)",           HOJJET_BOQUSH_UTF_16LE
+            MENUITEM "Unicode(UTF-16BE)",           HOJJET_BOQUSH_UTF_16BE
+            MENUITEM "Unicode(UTF-8)",              HOJJET_BOQUSH_UTF_8
+            MENUITEM "Uncode(UTF-7)",               HOJJET_BOQUSH_UTF_7
+            MENUITEM SEPARATOR
+            MENUITEM "Latin I (ISO-8859-1/CP1252)", HOJJET_BOQUSH_ISO8859_1
+            MENUITEM "Central/Eastern European(CP1250)", HOJJET_BOQUSH_1250
+            MENUITEM "Japanese(Shift JIS/CP932)",   HOJJET_BOQUSH_932
+            MENUITEM "Japanese(EUC)",               HOJJET_BOQUSH_JEUC
+            MENUITEM "Simplified Chinese(GB2312/CP936)",  HOJJET_BOQUSH_GB2312
+            MENUITEM "Traditional Chinese(CP950)",  HOJJET_BOQUSH_950
+            MENUITEM "Cyrillic(CP1251)",            HOJJET_BOQUSH_1251
+            MENUITEM "Greek(CP1253)",               HOJJET_BOQUSH_1253
+            MENUITEM "Turkish(CP1254)",             HOJJET_BOQUSH_1254
+            MENUITEM "Hebrew(CP1255)",              HOJJET_BOQUSH_1255
+            MENUITEM "Arabic(CP1256)",              HOJJET_BOQUSH_1256
+            MENUITEM "Baltic(CP1257)",              HOJJET_BOQUSH_1257
+        END
+        MENUITEM SEPARATOR
+        POPUP "Izlar..."
+        BEGIN
+            MENUITEM " ",HOJJET_IZ
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Axirlashturush",              HOJJET_QEKINISH
+    END
+    POPUP "Tehrirlesh"
+    BEGIN
+        MENUITEM "Yeniwelish",                  TEHRIR_YENIWELISH
+        MENUITEM "Qilish",                      TEHRIR_QILISH
+        MENUITEM SEPARATOR
+        MENUITEM "Kochurush(Copy)\tCtrl+C",     TEHRIR_KOCHURUSH
+        MENUITEM "Chaplash(Paste)\tCtrl+V",     TEHRIR_CHAPLASH
+        MENUITEM "Kesip Elish(Cut) \tCtrl+X",   TEHRIR_KESISH
+        MENUITEM "Ochurush\tDelete",            TEHRIR_OCHURUSH
+        MENUITEM SEPARATOR
+        MENUITEM "Izdesh Yaki Alamshturush",    TEHRIR_IZDESH
+        MENUITEM "Dawamlashturup Izdesh Yaki Almashturush",  TEHRIR_IZDESH_DAWAMLASHTURUSH
+        MENUITEM SEPARATOR
+        MENUITEM "Hemmini Tallash\tCtrl+A",     TEHRIR_HEM_TAL
+        MENUITEM SEPARATOR
+        MENUITEM "Hojjetning Beshigha Yotkilish\tCtrl+Home",   TEHRIR_HOJJETBESHI
+        MENUITEM "Hojjetning Axirigha Yotkilish\tCtrl+End",  TEHRIR_HOJJETAHIRI
+//        MENUITEM SEPARATOR
+//        MENUITEM "Tallan'ghan Kona Yeziqni Uyghur Latin Yeziqigha gha aylandurush	F1", TEHRIR_TALNIUKY
+//        MENUITEM "Tallan'gha Uyghur Latin Yeziqini Kona Yéziqqa aylandurush	F2", TEHRIR_TALNIKONA
+//        MENUITEM "Tallan'ghan Kona Yeziqni Slawiyan Yeziqigha gha aylandurush", TEHRIR_TALNISLAWIYAN
+//        MENUITEM "Tallan'ghan Slawiyan yeziqini Kona Yeziqqa aylandurush", TEHRIR_TALSLAWIYANUEY
+//        MENUITEM "Tallan'ghan Kona Yeziqni Ortaq Turk Yeziqigha gha aylandurush", TEHRIR_TALNITURK
+//        MENUITEM "Tallan'ghan Ortaq Turk Yeziqini Kona Yeziqqa aylandurush", TEHRIR_TALTURKUEY
+//        MENUITEM "Tallan'ghanni Chong Yezilishqa Aylandurush", TEHRIR_TALNICHONG
+//        MENUITEM "Tallan'ghanni Kichik Yezilishqa Aylandurush", TEHRIR_TALNIKICHIK
+//        MENUITEM SEPARATOR
+        POPUP "Bashqa Uyghurche Sistema Tekstlirini chaplash"
+        BEGIN
+            MENUITEM "UyghurSoft we bashqilar",                  TEHRIR_BCHAPLASH_UYGHURSOFT
+            MENUITEM "Ilikyurt",                    TEHRIR_BCHAPLASH_ILIKYURT
+            MENUITEM "Uyghurche xatire depter",     TEHRIR_BCHAPLASH_UIGHUR_NOTEPAD
+            MENUITEM "Duldul we bashqilar",                      TEHRIR_BCHAPLASH_DULDUL
+            MENUITEM "Bashqilar", TEHRIR_BCHAPLASH_BASHQILAR
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Asasiy Kodini Ishletmey Kochurush", TEHRIR_KOCHURUSH_ALL
+    END
+    POPUP "Bashqilar"
+    BEGIN
+        MENUITEM "Imlasini Tekshurush",         BASHQA_IMLA
+        MENUITEM SEPARATOR
+        MENUITEM "Bir Abzasni Tizish",          BASHQA_TIZISHABZAS
+        MENUITEM "Putkul Hojjetni Tizish",      BASHQA_TIZISHHEMME
+        MENUITEM SEPARATOR
+        MENUITEM "Xet Nusxisi",                 BASHQA_XETNUSXISI
+//        MENUITEM SEPARATOR
+//        MENUITEM "Soldin Ong'ha ",              BASHQA_SOLDINONG
+        MENUITEM SEPARATOR
+//        MENUITEM "Kona Yeziqni UKY gha Aylandurush", BASHQA_UKYGEAYLAN
+        POPUP "ULY ni Kona Yeziqqa Aylandurush"
+        BEGIN
+//            MENUITEM "Tekist",                      BASHQA_KONAGHAAYLAN_TXT
+            MENUITEM "Programma",                   BASHQA_KONAGHAAYLAN_PRG
+	    	MENUITEM "Korsetme Uchurlar",	    BASHQA_KONAGHAAYLAN_INF
+        END
+        POPUP "Yeziq Aylandurush"
+            BEGIN
+                MENUITEM SEPARATOR
+                MENUITEM "UEY -> ULY", BASHQA_UYGHUR2LATIN
+                MENUITEM "UEY -> USY", BASHQA_UYGHUR2SLAWIYAN
+                MENUITEM "UEY -> UMY\tCtrl+ALT+M", BASHQA_UYGHUR2MEWHUM
+                MENUITEM SEPARATOR
+                MENUITEM "ULY -> UEY", BASHQA_LATIN2UYGHUR
+                MENUITEM "ULY -> USY", BASHQA_LATIN2SLAWIYAN
+                MENUITEM "ULY -> UMY", BASHQA_LATIN2MEWHUM
+                MENUITEM SEPARATOR
+                MENUITEM "USY -> UEY", BASHQA_SLAWIYAN2UYGHUR
+                MENUITEM "USY -> ULY", BASHQA_SLAWIYAN2LATIN
+                MENUITEM "USY -> UMY", BASHQA_SLAWIYAN2MEWHUM
+                MENUITEM SEPARATOR
+                MENUITEM "UMY -> UEY\tCtrl+ALT+U", BASHQA_MEWHUM2UYGHUR
+                MENUITEM "UMY -> ULY\tCtrl+ALT+L", BASHQA_MEWHUM2LATIN
+                MENUITEM "UMY -> USY", BASHQA_MEWHUM2SLAWIYAN
+            END
+    END
+    POPUP "Tillar"
+    BEGIN
+        MENUITEM L"Uyghur Kona Yeziqi",      USERLG_UEY
+        MENUITEM L"Uyghur Latin yeziqi",      USERLG_ULY
+        MENUITEM L"Uyghur Silawiyan Yeziqi",      USERLG_USY
+        MENUITEM L"Japanese",                    USERLG_JAPANESE
+        MENUITEM L"English",                     USERLG_ENGLISH
+        MENUITEM L"Chinese",                     USERLG_CHINESE
+        MENUITEM L"Deutsch",                     USERLG_GERMAN
+    END
+    POPUP "Yardem"
+    BEGIN
+        MENUITEM "Uyghurche Kunupka",           YARDEM_KUNUPKA
+        MENUITEM "Uyghur Komputer Yeziqi(UKY)", YARDEM_ELIPPE
+        MENUITEM "Progiramma Heqqide",          YARDEM_HEQQIDE
+    END
+END
+
+IDM_UPOPUP MENUEX DISCARDABLE
+BEGIN
+    POPUP "Bashqilar"
+    BEGIN
+        MENUITEM "Kochurush(Copy)\tCtrl+C",     TEHRIR_KOCHURUSH
+        MENUITEM "Asasiy Kodini Ishletmey Kochurush", TEHRIR_KOCHURUSH_ALL
+        MENUITEM "Chaplash(Paste)\tCtrl+V",     TEHRIR_CHAPLASH
+        MENUITEM "Kesip Elish(Cut) \tCtrl+X",   TEHRIR_KESISH
+        MENUITEM "Ochurush\tDelete",            TEHRIR_OCHURUSH
+        MENUITEM SEPARATOR
+//        MENUITEM "Tallan'ghan Kona Yeziqni Uyghur Latin Yeziqigha gha aylandurush	F1", TEHRIR_TALNIUKY
+//        MENUITEM "Tallan'gha Uyghur Latin Yeziqini Kona Yéziqqa aylandurush	F2", TEHRIR_TALNIKONA
+//        MENUITEM "Tallan'ghan Kona Yeziqni Slawiyan Yeziqigha gha aylandurush", TEHRIR_TALNISLAWIYAN
+//        MENUITEM "Tallan'ghan Slawiyan yeziqini Kona Yeziqqa aylandurush", TEHRIR_TALSLAWIYANUEY
+//        MENUITEM "Tallan'ghan Kona Yeziqni Ortaq Turk Yeziqigha gha aylandurush", TEHRIR_TALNITURK
+//        MENUITEM "Tallan'ghan Ortaq Turk Yeziqini Kona Yeziqqa aylandurush", TEHRIR_TALTURKUEY
+//        MENUITEM SEPARATOR
+        MENUITEM "Chong Yezilishi",             TEHRIR_TALNICHONG
+        MENUITEM "Kichik Yezilishi",            TEHRIR_TALNIKICHIK
+    END
+END
+
+
+IDR_ACCEL ACCELERATORS
+BEGIN
+    "A",            TEHRIR_HEM_TAL,         VIRTKEY, CONTROL, NOINVERT
+    "B",            KOCHUR_ALA2UYGHUR,      VIRTKEY, CONTROL, NOINVERT
+    "C",            TEHRIR_KOCHURUSH,       VIRTKEY, CONTROL, NOINVERT
+    "F",            TEHRIR_IZDESH,          VIRTKEY, CONTROL, NOINVERT
+    "H",            TEHRIR_IZDESH,          VIRTKEY, CONTROL, NOINVERT
+    "L",            TEHRIR_TALNIKICHIK,     VIRTKEY, CONTROL, NOINVERT
+    "N",            HOJJET_YENGI,           VIRTKEY, CONTROL, NOINVERT
+    "O",            HOJJET_ECHISH,          VIRTKEY, CONTROL, NOINVERT
+    "P",            HOJJET_BESISH,          VIRTKEY, CONTROL, NOINVERT
+    "S",            HOJJET_SAQLASH,         VIRTKEY, CONTROL, NOINVERT
+    "U",            TEHRIR_TALNICHONG,      VIRTKEY, CONTROL, NOINVERT
+    "V",            TEHRIR_CHAPLASH,        VIRTKEY, CONTROL, NOINVERT
+    "X",            TEHRIR_KESISH,          VIRTKEY, CONTROL, NOINVERT
+    "Y",            TEHRIR_QILISH,          VIRTKEY, CONTROL, NOINVERT
+    "Z",            TEHRIR_YENIWELISH,      VIRTKEY, CONTROL, NOINVERT
+    "K",            BASHQA_KUNUPKA_OZGERT,  VIRTKEY, CONTROL, NOINVERT
+    "G",            BASHQA_IMLA,            VIRTKEY, CONTROL, NOINVERT
+    "M",            BASHQA_KUNUPKA_ALAHIDE, VIRTKEY, CONTROL, NOINVERT
+    "M",            BASHQA_UYGHUR2MEWHUM,   VIRTKEY, CONTROL, ALT, NOINVERT
+    "E",            BASHQA_KUNUPKA_SYSTEM,  VIRTKEY, CONTROL, NOINVERT
+    "U",            BASHQA_MEWHUM2UYGHUR,   VIRTKEY, CONTROL, ALT, NOINVERT
+    "L",            BASHQA_MEWHUM2LATIN,    VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_END,         TEHRIR_HOJJETAHIRI,     VIRTKEY, CONTROL, NOINVERT
+    VK_HOME,        TEHRIR_HOJJETBESHI,     VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          TEHRIR_TALNIUKY,        VIRTKEY, NOINVERT
+    VK_F2,          TEHRIR_TALNIKONA,       VIRTKEY, NOINVERT
+    VK_F3,          TEHRIR_IZDESH_DAWAMLASHTURUSH, VIRTKEY, NOINVERT
+    VK_F4,          BASHQA_IMLA,            VIRTKEY, NOINVERT
+    VK_F5,          BASHQA_KUNUPKA_KONA,    VIRTKEY, NOINVERT
+    VK_F6,          BASHQA_KUNUPKA_UKY,     VIRTKEY, NOINVERT
+    VK_F7,          BASHQA_TIZISHABZAS,     VIRTKEY, NOINVERT
+    VK_F8,          BASHQA_TIZISHHEMME,     VIRTKEY, NOINVERT
+    VK_F9,          BASHQA_UBUNTU,     VIRTKEY, NOINVERT
+    VK_F1,          USERMSG_APTOMATIC_TOGHRILA, VIRTKEY, CONTROL, NOINVERT
+    VK_F10,         USERMSG_SOZGEPARCHILASH, VIRTKEY, CONTROL, NOINVERT
+    VK_F11,         USERMSG_SOZGEPARCHILASH_YOQ, VIRTKEY, CONTROL, NOINVERT
+    VK_F12,         USERMSG_ABZASQA_PARCHILASH, VIRTKEY, CONTROL, NOINVERT
+    "O",            UUKY_HERIP_OO_KICHIK,   VIRTKEY, ALT, NOINVERT
+    "O",            UUKY_HERIP_OO_CHONG,    VIRTKEY, SHIFT, ALT, NOINVERT
+    "U",            UUKY_HERIP_UU_KICHIK,   VIRTKEY, ALT, NOINVERT
+    "U",            UUKY_HERIP_UU_CHONG,    VIRTKEY, SHIFT, ALT, NOINVERT
+    "E",            UUKY_HERIP_EE_KICHIK,   VIRTKEY, ALT, NOINVERT
+    "E",            UUKY_HERIP_EE_CHONG,    VIRTKEY, SHIFT, ALT, NOINVERT
+    "S",            BIRIKME_PIRSENT_S,   VIRTKEY, ALT, NOINVERT
+    "N",            BIRIKME_QAYTURUSH,   VIRTKEY, ALT, NOINVERT
+    "D",            BIRIKME_PUTUNSAN_D,   VIRTKEY, ALT, NOINVERT
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_RES_UEY            TEXT    MOVEABLE PURE   "uey_res.txt"
+
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 186, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UyghurEdit Heqqide"
+FONT 9, "Tahoma"
+BEGIN
+    ICON            IDR_UYGHUREDITICO,IDC_MYSTATIC1,7,5,20,20
+    LTEXT           "UyghurEdit Version 3.5",IDC_MYSTATIC2,35,6,106,8,SS_NOPREFIX
+    RTEXT           "2003.8, 2017.07",IDC_MYSTATIC3,45,18,62,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,131,40,50,16,WS_GROUP
+    LTEXT           "Aptor: Gheyret Tohti Kenji\nE-Mail: gheyret@yahoo.com",IDC_MYSTATIC4,8,37,102,18
+END
+
+IDD_MUQEDDIME DIALOG DISCARDABLE  0, 0, 302, 110
+STYLE WS_POPUP | WS_BORDER
+FONT 9, "Tahoma"
+BEGIN
+END
+
+IDD_KUNUPKA DIALOG DISCARDABLE  0, 0, 302, 110
+STYLE WS_CAPTION | WS_SYSMENU
+FONT 9, "Tahoma"
+BEGIN
+END
+
+IDD_ELIPBE DIALOG DISCARDABLE  0, 0, 302, 110
+STYLE  WS_CAPTION | WS_SYSMENU
+FONT 9, "Tahoma"
+BEGIN
+END
+
+IDD_SETFONT DIALOGEX 0, 0, 190, 144
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU|WS_POPUP
+CAPTION "Uyghuredit - Xet Nusxisini Tallash"
+FONT 9, "Tahoma", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Tamam",SETFONT_TAMAM,75,125,50,12
+    PUSHBUTTON      "Inawetsiz",SETFONT_CANCEL,129,125,50,12
+    LTEXT           "Uyghurche Font",LABFONT_UYGHUR,2,5,72,8,0,WS_EX_RIGHT
+    LTEXT           "Sistema Fonti",LABFONT_SYSTEM,2,19,71,8,0,WS_EX_RIGHT
+    COMBOBOX        IDC_COMBO2,78,16,108,77,CBS_DROPDOWNLIST | CBS_SORT |
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Xet Chonglighi",LABFONT_SIZE,2,32,72,8,0,WS_EX_RIGHT
+    LTEXT           "Qur Arisidiki Boshluq",LABFONT_BOSHLUQ,2,44,76,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Qeniq Xet",IDC_CHECK1,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,128,31,58,10
+    CONTROL         "Qiypash Xet",IDC_CHECK2,"Button",BS_AUTOCHECKBOX |
+                    WS_TABSTOP,128,45,59,10
+    CONTROL         "",IDC_KORNUSH,"static",SS_SUNKEN|SS_OWNERDRAW,6,63,179,57
+    LTEXT           "Korunushi",LABFONT_KORNUSH,6,54,73,8
+    COMBOBOX        IDC_COMBO4,78,42,34,53,CBS_DROPDOWNLIST | WS_VSCROLL |
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO1,78,3,108,86,CBS_DROPDOWNLIST | CBS_SORT |
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,78,29,34,51,CBS_DROPDOWNLIST | WS_VSCROLL |
+                    WS_TABSTOP
+END
+
+IDD_TALLASHDLG_DIALOG DIALOGEX 0, 0, 178, 40
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU|WS_POPUP
+FONT 9, "Tahoma" , 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "He",TAL_BTN_HE,1,22,40,12
+    PUSHBUTTON      "Hemmini",TAL_BTN_HEMMNI,46,22,40,12
+    PUSHBUTTON      "Yaq",TAL_BTN_YAQ,91,22,40,12
+    PUSHBUTTON      "Tohtash",TAL_BTN_TOHTA,136,22,40,12
+    PUSHBUTTON      "Tamam",SETFONT_TAMAM,136,22,40,12
+    PUSHBUTTON      "Inawetsiz",SETFONT_CANCEL,129,22,40,12
+END
+
+IDD_UFILEOPEN DIALOGEX 0, 0, 284, 101
+STYLE DS_CONTROL | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "Tahoma", 0, 0, 0x1
+BEGIN
+    CTEXT           "This is where the standard controls will go!",1119,0,0,
+                    284,75,SS_SUNKEN | NOT WS_VISIBLE | WS_BORDER,
+                    WS_EX_CLIENTEDGE
+    LTEXT           "Hojjetning Kodi",UFILEOPEN_CODELBL,8,77,55,8
+    COMBOBOX        UFILEOPEN_CODE,66,75,128,65,CBS_DROPDOWNLIST |
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Periqlendurush Belgisini Qoshush",UFILEOPEN_BELGISI,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,90,115,10
+    CONTROL         "Asasiy Kodinila Saqlash",UFILEOPEN_ASASIRAYON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,126,90,156,10
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  MOVEABLE PURE   "Toolbar.bmp"
+RESIM_ELIPBE            BITMAP  MOVEABLE PURE   "ELIPPE.bmp"
+RESIM_KUNUPKA           BITMAP  MOVEABLE PURE   "KUNUPKA.bmp"
+UEDIT_BITKONA           BITMAP  MOVEABLE PURE   "kona.bmp"
+UEDIT_BITUKY            BITMAP  MOVEABLE PURE   "uky.bmp"
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Kenjisoft\0"
+            VALUE "FileDescription", "UyghurEdit\0"
+            VALUE "FileVersion", "3.5\0"
+            VALUE "InternalName", "UyghurEdit.EXE\0"
+            VALUE "LegalCopyright", "Copyright 2003-2017 Kenjisoft.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "UyghurEdit.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "UyghurEdit\0"
+            VALUE "ProductVersion", "3.5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_UYGHUREDITICO_S          ICON    DISCARDABLE     "UyghurEditSMALL.ICO"
+IDR_UYGHUREDITICO          ICON    DISCARDABLE       "UyghurEdit.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+RESIM_KORSETKUCH        CURSOR  DISCARDABLE     "edit.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    STBAR_QURSTON           "Qur: ddddd  Ston: ddd"
+    STBAR_UNICODE           "UNICODE [dddd]"
+    STBAR_QISTURUSH         "Ustige Yezish"
+    STBAR_APTOR             "Gheyret Tohti Kenji"
+    STBAR_TIME              "          "
+END

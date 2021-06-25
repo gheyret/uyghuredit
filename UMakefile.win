@@ -1,0 +1,57 @@
+# Project: UyghurEdit
+# Makefile created by Dev-C++ 4.9.9.1
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = UyghurEdit.res
+OBJ  = UGlobal.o UyghurEdit.o UEditWin.o CDialog.o RegistryOperation.o UyghurEditMain.o UFileDialog.o SetFont.o UCaptionButton.o UMessageBox.o UBidiLine.o $(RES)
+LIBS =  -mwindows -lkernel32 -luser32 -lgdi32 -lcomdlg32 -ladvapi32 -limm32 -lcomctl32 -lshlwapi
+BIN  = UyghurEdit.exe
+CXXFLAGS = -D__GNUWIN32__ -W -fexceptions -DWIN32  -D_WINDOWS -DUNICODE -D_UNICODE -O3 -mcpu=i686 -march=i686
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+
+clean: clean-custom
+	del  $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(OBJ) -o $(BIN) $(LIBS)
+
+UGlobal.o: UGlobal.cpp
+	$(CPP) -c UGlobal.cpp -o UGlobal.o $(CXXFLAGS)
+
+UyghurEdit.o: UyghurEdit.cpp
+	$(CPP) -c UyghurEdit.cpp -o UyghurEdit.o $(CXXFLAGS)
+
+UEditWin.o: UEditWin.cpp
+	$(CPP) -c UEditWin.cpp -o UEditWin.o $(CXXFLAGS)
+
+CDialog.o: CDialog.cpp
+	$(CPP) -c CDialog.cpp -o CDialog.o $(CXXFLAGS)
+
+RegistryOperation.o: RegistryOperation.cpp
+	$(CPP) -c RegistryOperation.cpp -o RegistryOperation.o $(CXXFLAGS)
+
+UyghurEditMain.o: UyghurEditMain.cpp
+	$(CPP) -c UyghurEditMain.cpp -o UyghurEditMain.o $(CXXFLAGS)
+
+UyghurEdit.res: UyghurEdit.rc 
+	$(WINDRES) -i UyghurEdit.rc --input-format=rc -o UyghurEdit.res -O coff 
+
+UFileDialog.o: UFileDialog.cpp
+	$(CPP) -c UFileDialog.cpp -o UFileDialog.o $(CXXFLAGS)
+
+SetFont.o: SetFont.cpp
+	$(CPP) -c SetFont.cpp -o SetFont.o $(CXXFLAGS)
+UCaptionButton.o: UCaptionButton.cpp
+	$(CPP) -c UCaptionButton.cpp -o UCaptionButton.o $(CXXFLAGS)
+
+UMessageBox.o: UMessageBox.cpp
+	$(CPP) -c UMessageBox.cpp -o UMessageBox.o  $(CXXFLAGS)
+
+UBidiLine.o: UBidiLine.cpp
+	$(CPP) -c UBidiLine.cpp -o UBidiLine.o  $(CXXFLAGS)
