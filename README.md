@@ -8,7 +8,7 @@ A free Text Editor with spell check ability for Uyghur.
 (Uyghuredit Windows muhitidila ishleydu)<br>
 
 [uyghuredit.7z](https://github.com/gheyret/uyghuredit/releases/download/v3.5/uyghuredit.7z) ni ornatmayla, herqandaq yerge yéyip ishletkili bolidu. <br>
-bilmigenler uyghuredit.msi ni chüshürüp sistémingizgha ornitip ishliting.<br>
+bilmigenler [uyghuredit.msi](https://github.com/gheyret/uyghuredit/releases/download/v3.5/uyghuredit.msi) ni chüshürüp sistémingizgha ornitip ishliting.<br>
 
 # Kona bilimler: 
 Uyghur’édit ning özining kirgüzüsh iqtidari bar bolup, kirgüzgüchlerni almashturush üchün Ctl+K ni qayta-qayta bésish arqiliq kirgüzgüchlerni almashturghili bolidu. Ctl+K ni basqanda, halet baldiqi(eng astidiki baldaq)ning eng ong teripide qaysi xil yéziqning kirgüzgüchi ikenlikini bilgili bolidu.
